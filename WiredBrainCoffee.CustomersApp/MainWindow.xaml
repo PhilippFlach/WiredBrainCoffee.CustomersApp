@@ -10,14 +10,16 @@
         <Button x:Name="btnAddCustomer"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Margin="10"
+                Margin="10" Width="75"
                 Click="ButtonAddCustomer_Click">
             <Button.Content>
-                Add customer
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/add.png" Height="18"
+                           Margin="0 0 5 0"/>
+                    <TextBlock Text="Add"/>
+                </StackPanel>
             </Button.Content>
-            <Button.Background>
-                <LinearGradientBrush></LinearGradientBrush>
-            </Button.Background>
+
         </Button>
 
 
