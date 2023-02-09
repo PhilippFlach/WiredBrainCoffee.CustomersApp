@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WiredBrainCoffee.CustomersApp"
         mc:Ignorable="d"
-        Title="Customers App" Height="500" Width="800" FontSize="20">
+        d:DesignWidth="500" d:DesignHeight="600"  Title="Customers App" Height="500" Width="800" FontSize="20">
   <Grid>
     <Grid.ColumnDefinitions>
       <ColumnDefinition/>
@@ -18,7 +18,7 @@
       <RowDefinition/>
     </Grid.RowDefinitions>
 
-    <!-- Main menu -->
+     <!-- Main menu --> 
     <Menu FontSize="20">
       <MenuItem Header="_View">
         <MenuItem Header="_Customers"/>
