@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WiredBrainCoffee.CustomersApp"
         mc:Ignorable="d"
-        d:DesignWidth="500" d:DesignHeight="600"  Title="Customers App" Height="500" Width="800" FontSize="20">
+        d:DesignWidth="700" d:DesignHeight="600"  Title="Customers App" Height="500" Width="800" FontSize="20">
   <Grid>
     <Grid.ColumnDefinitions>
-      <ColumnDefinition/>
+      <ColumnDefinition Width="Auto"/>
       <ColumnDefinition/>
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
       <RowDefinition/>
-      <RowDefinition/>
-      <RowDefinition/>
-      <RowDefinition/>
+      <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
 
      <!-- Main menu --> 
