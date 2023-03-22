@@ -6,10 +6,6 @@
              xmlns:local="clr-namespace:WiredBrainCoffee.CustomersApp.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Resources>
-        <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#F05A28"/>
-        <SolidColorBrush x:Key="HeaderForegroundBrush" Color="White"/>
-    </UserControl.Resources>
     <Grid Background="{StaticResource HeaderBackgroundBrush}">
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
             <Image Source="/Images/logo.png" Width="100" Margin="5"/>
