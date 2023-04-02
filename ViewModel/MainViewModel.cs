@@ -10,6 +10,7 @@ namespace WiredBrainCoffee.CustomersApp.ViewModel
         public MainViewModel(CustomersViewModel customersViewModel)
         {
             this._customersViewModel = customersViewModel;
+            SelectedViewModel = _customersViewModel;
         }
 
         public ViewModelBase? SelectedViewModel
