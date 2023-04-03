@@ -25,7 +25,13 @@
 
     <controls:HeaderControl Grid.Row="1"/>
 
-    <view:CustomersView Grid.Row="2" DataContext="{Binding SelectedViewModel}"/>
+        <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}">
+            <ContentControl.ContentTemplate>
+                <DataTemplate>
+                    <view:CustomersView/>
+                </DataTemplate> 
+            </ContentControl.ContentTemplate>
+        </ContentControl>
 
     <StatusBar Grid.Row="3" >
       <StatusBarItem FontSize="20" Content=" (c) Wired Brain Coffee"/>
