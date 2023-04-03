@@ -31,7 +31,7 @@
     <controls:HeaderControl Grid.Row="1"/>
 
         <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}"
-                        ContentTemplate="CustomersViewModelTemplate"/>
+                        ContentTemplate="{StaticResource CustomersViewModelTemplate}"/>
 
         <StatusBar Grid.Row="3" >
       <StatusBarItem FontSize="20" Content=" (c) Wired Brain Coffee"/>
