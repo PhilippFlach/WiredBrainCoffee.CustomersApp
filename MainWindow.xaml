@@ -8,7 +8,12 @@
         mc:Ignorable="d"
         Title="Customers App" 
         d:DesignWidth="700" d:DesignHeight="600" Height="500" Width="800" FontSize="20">
-  <Grid>
+    <Window.Resources>
+        <DataTemplate x:Key="CustomersViewModelTemplate">
+            <view:CustomersView/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
@@ -25,15 +30,10 @@
 
     <controls:HeaderControl Grid.Row="1"/>
 
-        <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}">
-            <ContentControl.ContentTemplate>
-                <DataTemplate>
-                    <view:CustomersView/>
-                </DataTemplate> 
-            </ContentControl.ContentTemplate>
-        </ContentControl>
+        <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}"
+                        ContentTemplate="CustomersViewModelTemplate"/>
 
-    <StatusBar Grid.Row="3" >
+        <StatusBar Grid.Row="3" >
       <StatusBarItem FontSize="20" Content=" (c) Wired Brain Coffee"/>
     </StatusBar>
   </Grid>
