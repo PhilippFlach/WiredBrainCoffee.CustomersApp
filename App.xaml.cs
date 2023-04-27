@@ -26,6 +26,7 @@ namespace WiredBrainCoffee.CustomersApp
             services.AddTransient<ProductsViewModel>();
 
             services.AddTransient<ICustomerDataProvider, CustomerDataProvider>();
+            services.AddTransient<IProductDataProvider, ProductDataProvider>();
 
         }
 
