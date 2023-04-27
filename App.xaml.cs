@@ -9,10 +9,13 @@ namespace WiredBrainCoffee.CustomersApp
 
     public partial class App : Application
     {
+        private readonly ServiceProvider _serviceProvider;
+
         public App()
         {
             ServiceCollection services  = new ();
             ConfigureServices(services);
+            _serviceProvider = services.BuildServiceProvider();
         }
 
         private void ConfigureServices(ServiceCollection services)
@@ -30,10 +33,8 @@ namespace WiredBrainCoffee.CustomersApp
         {
             base.OnStartup(e);
 
-            var mainWindow = new MainWindow(new MainViewModel(
-                new CustomersViewModel(new CustomerDataProvider()),
-                new ProductsViewModel()));
-            mainWindow.Show();
+            var mainWindow = _serviceProvider.GetService<MainWindow>();
+            mainWindow?.Show();
         }
     }
 }
