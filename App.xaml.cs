@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using WiredBrainCoffee.CustomersApp.Data;
+using WiredBrainCoffee.CustomersApp.ViewModel;
 
 namespace WiredBrainCoffee.CustomersApp
 {
@@ -9,7 +11,9 @@ namespace WiredBrainCoffee.CustomersApp
         {
             base.OnStartup(e);
 
-            var mainWindow = new MainWindow();
+            var mainWindow = new MainWindow(new MainViewModel(
+                new CustomersViewModel(new CustomerDataProvider()),
+                new ProductsViewModel()));
             mainWindow.Show();
         }
     }
