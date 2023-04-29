@@ -65,7 +65,8 @@
             <Label>Firstname:</Label>
             <TextBox Text="{Binding  SelectedCustomer.FirstName,
                 Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     Style="{StaticResource TextBoxStyle}"/>
+                     Style="{StaticResource TextBoxStyle}"
+                     Background="Green"/>
             <Label>Lastname:</Label>
             <TextBox Text="{Binding  SelectedCustomer.LastName,
                 Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
