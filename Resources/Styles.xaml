@@ -5,7 +5,7 @@
     </Style>
     <Style TargetType = "{x:Type TextBox}" 
                        BasedOn="{StaticResource TextBoxBaseStyle}">
-        <Setter Property="Background" Value="#555555"/>
+        <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
 </ResourceDictionary>
