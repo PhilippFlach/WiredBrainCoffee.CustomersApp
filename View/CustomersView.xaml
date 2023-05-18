@@ -58,8 +58,7 @@
 
             <Label>Firstname:</Label>
             <TextBox Text="{Binding  SelectedCustomer.FirstName,
-                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     Background="Green"/>
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <Label>Lastname:</Label>
             <TextBox Text="{Binding  SelectedCustomer.LastName,
                 Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>

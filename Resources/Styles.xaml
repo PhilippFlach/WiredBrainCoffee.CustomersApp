@@ -5,7 +5,15 @@
     </Style>
     <Style TargetType = "{x:Type TextBox}" 
                        BasedOn="{StaticResource TextBoxBaseStyle}">
-        <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}"/>
+        <Setter Property="Background" Value="#555555"/>
         <Setter Property="Foreground" Value="White"/>
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="#111111"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="Green"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>
